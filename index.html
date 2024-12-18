@@ -46,8 +46,7 @@
              <h2>Pergunta 2: na URL https://www.google.com o trecho "google.com" é o ______</h2>
              <form> <!--colocar os inputs sempre dentro de um form-->
                   <input type="text" id="p2" name="Pergunta 2"
-                  placeholder="Digite aqui..."> <!--o placeholeder é uma escrita padrão dentro da caixa de texto enquanto não tem nada nela-->>
-                  
+                  placeholder="Digite aqui..."> <!--o placeholeder é uma escrita padrão dentro da caixa de texto enquanto não tem nada nela-->> <br>
             </form>
             <!--Pergunta 3: senha:-->
             <section>
@@ -161,8 +160,30 @@
             <!--Formulário de feedback-->
             <section>
                 <h2>Nos dê o seu feedback</h2>
+                <form> <!--Form é para formulários-->
+                <fieldset> <!--o fieldset é para juntar a tabela-->
+                    <legend>Informações de contato</legend>
+                    <label for="name">Nome:</label> <br>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email"> 
+
+                    <label for="comentarios">Comentários</label> <br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite seus comentários aqui"></textarea> <br>
+
+                    <button onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button>
+                </fieldset>
+                </form> 
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>&copy;  <!--o p é um paragrafo-->
+                quiz de programação, todos os direitos reservados.</p>
+
+            <!--Criando palavras clicáveis:-->
+            <p>Para conhecer sobre mim, <a href="file:///C:/Users/wpass/OneDrive/%C3%81rea%20de%20Trabalho/meu_site/sobremim.html" target="_blank">clique aqui:</a></p> <!--O target="_blank" é pra
+            manter na mesma página-->
+        </footer>
     </body>
 </html>
